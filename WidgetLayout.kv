@@ -1,0 +1,32 @@
+BoxLayoutExample
+
+<BoxLayoutExample>:
+    orientation: "horizontal"
+    Button:
+        text: "Button A"
+        background_color: 255,1,1,1
+        size_hint: .5,1
+    Button:
+        text: "Button B"
+        background_color: 0,255,0,1
+        size_hint: 2,1
+    Button:
+        text: "Button C"
+        background_color: 0,0,255,1
+        size_hint: 1,1.5
+        # horizontal positions: "x"(left), center_x, "right"
+        # vertical positions: "y"(bottom), center_y, "top"
+        pos_hint: {"center_y":1}
+
+<MainWidget>
+    Button:
+        text: "Button A"
+        size: "200dp", "300dp"
+        pos: "100dp", "100dp"
+        color: 1, .5, .5, 1
+        background_color: 255,1,1,1
+
+    Label:
+        text: "Label A"
+        size: "200dp", "300dp"
+        pos: "500dp", "100dp"

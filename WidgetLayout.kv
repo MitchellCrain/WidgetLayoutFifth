@@ -1,4 +1,21 @@
-BoxLayoutExample
+StackLayoutExample
+
+<StackLayoutExample>:
+    Button:
+        text: "A"
+        size_hint: .2, .2
+    Button:
+        text: "B"
+        size_hint: .2, .2
+    Button:
+        text: "C"
+        size_hint: .2, .2
+    Button:
+        text: "D"
+        size_hint: .2, .2
+    Button:
+        text: "E"
+        size_hint: .2, .2
 
 <BoxLayoutExample>:
     orientation: "horizontal"
@@ -17,6 +34,13 @@ BoxLayoutExample
         # horizontal positions: "x"(left), center_x, "right"
         # vertical positions: "y"(bottom), center_y, "top"
         pos_hint: {"center_y":1}
+    BoxLayout:
+        Button:
+            text: "Button F"
+        Label:
+            text: "Hello Class"
+        Button:
+            text: "Button G"
 
 <MainWidget>
     Button:

@@ -1,21 +1,102 @@
-StackLayoutExample
+LayoutAssignment
 
-<StackLayoutExample>:
+<LayoutAssignment>:
+    orientation: "vertical"
+    Label:
+        text: "Layout Assignment"
+        size_hint: 1, 0.2
+    BoxLayout:
+        orientation: "horizontal"
+        Button
+            text: "Button A"
+            size_hint: .25, 1
+            background_color: 255,0,255,1
+        Button
+            text: "Button B"
+            size_hint: .25, 1
+            background_color: 255,0,255,1
+    BoxLayout:
+        #exact color is 153,0,255 in rgb
+        orientation: "horizontal"
+        Button
+            text: "Button C"
+            background_color: 0,0,255
+        Button
+            text: "Button D"
+            background_color: 0,0,255
+        Button
+            text: "Button E"
+            background_color: 0,0,255
+    BoxLayout:
+        orientation: "vertical"
+        Button
+            text: "Hello"
+            background_color: 0,255,0
+        Button
+            text: "World"
+
+
+        #Button:
+        #    text: "Replace Me With Another Layout"
+        #Button:
+        #    text: "Replace Me With Another Layout"
+        #Button:
+        #    text: "Replace Me With Another Layout"
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint: 1, None
+        height: self.minimum_height
+
+<GridLayoutExample>:
+    # define the number of rows and columns
+    row: 2
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
     Button:
         text: "A"
         size_hint: .2, .2
     Button:
-        text: "B"
-        size_hint: .2, .2
+        text: "A"
     Button:
-        text: "C"
-        size_hint: .2, .2
+        text: "A"
     Button:
-        text: "D"
-        size_hint: .2, .2
+        text: "A"
     Button:
-        text: "E"
-        size_hint: .2, .2
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+
+
+<StackLayoutExample>:
+    # (lr)left-right, rlright-left)
+    # tb(top - bottom) bt(bottom - top)
+    #
+    #(Button:
+    #    text: "A"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "B"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "C"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "D"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "E"
+    #    size_hint: .2, .2)
 
 <BoxLayoutExample>:
     orientation: "horizontal"

@@ -3,37 +3,110 @@ LayoutAssignment
 <LayoutAssignment>:
     orientation: "vertical"
     Label:
-        text: "Layout Assignment"
+        text: "Kivy Layout (Label)"
         size_hint: 1, 0.2
     BoxLayout:
         orientation: "horizontal"
-        Button
-            text: "Button A"
-            size_hint: .25, 1
-            background_color: 255,0,255,1
-        Button
-            text: "Button B"
-            size_hint: .25, 1
-            background_color: 255,0,255,1
-    BoxLayout:
-        #exact color is 153,0,255 in rgb
-        orientation: "horizontal"
-        Button
-            text: "Button C"
-            background_color: 0,0,255
-        Button
-            text: "Button D"
-            background_color: 0,0,255
-        Button
-            text: "Button E"
-            background_color: 0,0,255
-    BoxLayout:
-        orientation: "vertical"
-        Button
-            text: "Hello"
-            background_color: 0,255,0
-        Button
-            text: "World"
+        BoxLayout:
+
+            orientation: "horizontal"
+            Button
+                text: "Button A"
+                size_hint: .25, 1
+                background_color: 255,0,255,1
+            Button
+                text: "Button B"
+                size_hint: .25, 1
+                background_color: 255,0,255,1
+        BoxLayout:
+            #exact color is 153,0,255 in rgb
+            orientation: "vertical"
+            Button
+                text: "Button C"
+                background_color: 0,0,255
+            Button
+                text: "Button D"
+                background_color: 0,0,255
+            Button
+                text: "Button E"
+                background_color: 0,0,255
+        GridLayout:
+            rows: 6
+            Button
+                text: "1"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "2"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "3"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "4"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "5"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "6"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "7"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "8"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "9"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "10"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "11"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "12"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "13"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "14"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "15"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "16"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "17"
+                background_color: 0,255,0
+                size_hint: .222,.222
+            Button
+                text: "18"
+                background_color: 0,255,0
+                size_hint: .222,.222
+
+
+
 
 
         #Button:
@@ -82,7 +155,7 @@ LayoutAssignment
     # (lr)left-right, rlright-left)
     # tb(top - bottom) bt(bottom - top)
     #
-    #(Button:
+    #Button:
     #    text: "A"
     #    size_hint: .2, .2
     #Button:
@@ -96,7 +169,7 @@ LayoutAssignment
     #    size_hint: .2, .2
     #Button:
     #    text: "E"
-    #    size_hint: .2, .2)
+    #    size_hint: .2, .2
 
 <BoxLayoutExample>:
     orientation: "horizontal"

@@ -5,7 +5,7 @@ from kivy.uix.stacklayout import StackLayout
 from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
 
-class LayoutAssignment(BoxLayout):
+class LayoutAssignment(BoxLayout,GridLayout):
     pass
 
 
